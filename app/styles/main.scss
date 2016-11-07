@@ -1,0 +1,127 @@
+
+
+.caption {
+  color: #666;
+  font-style: italic;
+}
+
+.caption:first-letter {
+ text-transform: uppercase;
+}
+
+.block-img {
+  margin-top: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  transition: 0.3s;
+  height: 250px;
+}
+
+.block-img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.album {
+  height: 60px;
+  padding: 10px;
+}
+
+
+.block-img:last-child {
+  margin-bottom: 50px;
+}
+
+.fig {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.fig figcaption {
+  padding-bottom: 100px;
+  font-size: 20px;
+}
+
+.fig figcaption:first-letter {
+  text-transform: uppercase;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+#footer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+  background:#333;
+}
+#footer .name {
+  padding-top: 5px;
+  color: #FFFFFF;
+}
+
+#github:hover {
+  color: #ceaaff;
+}
+
+#github {
+  margin-left: 20px;
+  color: #FFFFFF;
+  font-size: 23px;
+}
+
+#myTopnav a {
+  font-size: 25px;
+}

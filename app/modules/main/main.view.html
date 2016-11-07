@@ -1,0 +1,8 @@
+<div class="container main">
+    <div ng-repeat="image in imagesView" class="col-md-4 col-sm-6 col-xs-12 block-img text-center" ng-click="vm.pickImage(image.id)">
+            <img src={{image.thumbnailUrl}} alt="img-{{$index}}">
+        <p class="caption">{{image.title}}</p>
+    </div>
+</div>
+
+
